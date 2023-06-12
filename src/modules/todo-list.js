@@ -13,7 +13,6 @@ generateClearButton();
 
 export default class List {
   constructor() {
-    console.log(1);
     this.tasks = [];
     this.clearCompleted();
   }

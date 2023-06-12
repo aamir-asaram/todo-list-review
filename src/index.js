@@ -3,14 +3,8 @@ import List from './modules/todo-list.js';
 import Task from './modules/task.js';
 
 const list = new List();
-if (localStorage.getItem('tasks')) {
-  const tasks = JSON.parse(localStorage.getItem('tasks'));
-  tasks.forEach((task) => {
-    const newTask = new Task(task.description, task.index);
-    newTask.checked = task.checked;
-    list.add(newTask);
-  });
-}
+list.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
 const add = document.getElementById('input');
 add.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && add.value !== '') {
