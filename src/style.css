@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body > * {
+  width: 80%;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+  filter: drop-shadow(8px 5px 10px #000);
+  margin-top: 20px;
+}
+
+#wrapper > * {
+  width: 100%;
+  height: 63px;
+  border-bottom: 1px solid darkorchid;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border: none;
+}
+
+#list > * {
+  width: 100%;
+  height: 63px;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#heading h1 {
+  margin: 10px;
+  width: auto;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+i {
+  position: absolute;
+  right: 27px;
+  color: gray;
+  cursor: pointer;
+  border: none;
+}
+
+#reset:hover {
+  color: red;
+}
+
+#add {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+#input {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  margin-left: 10px;
+}
+
+#input:placeholder-shown {
+  font-style: italic;
+}
+
+#input:focus {
+  outline: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.task {
+  width: 85%;
+  height: 90%;
+  border: none;
+  font-size: 16px;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.task:hover {
+  cursor: default;
+}
+
+.item i {
+  cursor: move;
+}
+
+.selected {
+  background-color: rgb(255, 248, 176);
+}
+
+.checkbox {
+  margin-inline: 16px;
+  border: 2px solid gray;
+  width: auto;
+  transform: scale(1.6);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+#remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.clearSect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.clear {
+  background-color: rgba(128, 128, 128, 0.222);
+  height: 100%;
+  width: 100%;
+  border: none;
+  justify-self: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: red;
+}
