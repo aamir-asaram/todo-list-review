@@ -1,5 +1,3 @@
-import Task from './task.js';
-
 const generateClearButton = () => {
   const sect = document.getElementById('wrapper');
   const clearSect = document.createElement('div');
